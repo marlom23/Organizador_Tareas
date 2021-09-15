@@ -1,5 +1,7 @@
 class TasksController < ApplicationController
   before_action :set_task, only: %i[ show edit update destroy ]
+  
+
 
   # GET /tasks or /tasks.json
   def index
@@ -55,6 +57,8 @@ class TasksController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+ 
 
   private
     # Use callbacks to share common setup or constraints between actions.
