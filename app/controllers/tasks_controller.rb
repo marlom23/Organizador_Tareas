@@ -24,7 +24,7 @@ class TasksController < ApplicationController
   # POST /tasks or /tasks.json
   def create
     @task = Task.new(task_params)
-
+    @task.owner = current_user
     respond_to do |format|
       if @task.save
         format.html { redirect_to @task, notice: "Task was successfully created." }
@@ -35,6 +35,7 @@ class TasksController < ApplicationController
       end
     end
   end
+
 
   # PATCH/PUT /tasks/1 or /tasks/1.json
   def update
@@ -71,3 +72,4 @@ class TasksController < ApplicationController
       params.require(:task).permit(:name, :description, :due_date, :category_id)
     end
 end
+
