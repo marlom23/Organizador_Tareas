@@ -19,6 +19,8 @@ es:
   tasks:
     common:
       back: Atrás
+    errors:
+      invalid_due_date: La fecha no puede estar en el pasado
     form:
       category: Categoría
       description: Descripción

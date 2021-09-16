@@ -19,11 +19,11 @@ en:
   tasks:
     common:
       back: Atrás
+    errors:
+      invalid_due_date: Invalid due date
     form:
       category: Categoría
       description: Descripción
       due_date: Fecha de vencimiento
       name: Nombre
-    new:
-      tasks:
-        new_task: New task
+    new_task: New task
