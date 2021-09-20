@@ -10,6 +10,11 @@
     <%= f.association :category, label: t('.category')  %>
   </div>
 
+  <div class="participants">
+    <%= f.simple_fields_for :participanting_user do |g| %>
+    <%= render 'participanting_user_fields', f: g %>
+  </div>
+
   <div class="form-actions">
     <%= f.button :submit %>
   </div>

@@ -26,6 +26,7 @@ gem 'annotate', '~>3.1.1'
 gem 'i18n-tasks'
 gem 'rails-i18n'
 gem 'devise'
+gem 'cocoon'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
