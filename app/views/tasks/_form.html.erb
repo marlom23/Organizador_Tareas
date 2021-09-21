@@ -8,12 +8,20 @@
     <%= f.input :description, label: t('.description')%>
     <%= f.input :due_date, label: t('.due_date') %>
     <%= f.association :category, label: t('.category')  %>
+    <%= link_to_add_association f, :participating_users, 'data-association-insertion-node'=> '.participants .participants-container', 'data-turbolinks' => false do %>
+      Agregar participante
+    <% end %>
+    
+  </div>
+  
+  <div class="participants">
+    <%= f.simple_fields_for :participating_users do |g| %>
+      <%= render 'participating_user_fields', f: g %>
+    <% end %>
+    <div class= "participants-container"></div>
   </div>
 
-  <div class="participants">
-    <%= f.simple_fields_for :participanting_user do |g| %>
-    <%= render 'participanting_user_fields', f: g %>
-  </div>
+   
 
   <div class="form-actions">
     <%= f.button :submit %>
