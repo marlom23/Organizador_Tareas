@@ -9,21 +9,50 @@ en:
         one: Tarea
         others: Tareas
   categories:
+    categories: Categories
     form:
       description: Description
       name: Name
     new_category: Nueva Categoria
+  category:
+    category: Category
   common:
     back: Atrás
+  description:
+    description: Description
+  due_date:
+    due_date: Due date
   hello: Hello world
+  index:
+    category:
+      one: Categoría
+      others: Categorías
+    task:
+      one: Tarea
+      others: Tareas
+  name:
+    name: Name
+  new_category:
+    new_category: New category
+  new_task:
+    new_task: New task
+  task:
+    form:
+      new_task: Nueva Tarea
   tasks:
     common:
       back: Atrás
     errors:
+      category: Categoría
+      description: Descripción
+      due_date: Fecha de vencimiento
+      form: Form
       invalid_due_date: Invalid due date
+      name: Nombre
     form:
       category: Categoría
       description: Descripción
       due_date: Fecha de vencimiento
       name: Nombre
     new_task: New task
+    tasks: Tasks
