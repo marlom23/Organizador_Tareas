@@ -34,5 +34,6 @@ module Organizador
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    Rack::MiniProfiler.config.start_hidden = true
   end
 end

@@ -7,8 +7,8 @@ class TasksController < ApplicationController
   # GET /tasks or /tasks.json
   def index
     @tasks = Task.joins(:participants).where(
-      'owner_id = ? OR participants.user_id = ?',
-      current_user.id,
+      'owner_id = :id OR participants.user_id = :id',
+      {id: current_user.id}
     ).group(:id)
   end
 
