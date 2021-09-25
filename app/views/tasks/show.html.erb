@@ -20,5 +20,15 @@
   <%= @task.category_id %>
 </p>
 
+  <div class="notes-container">
+  <% @task.notes.each do |note| %>
+    <%= note.body %>
+    <br>
+  <% end %>
+  <%= simple_form_for Note.new, url: task_notes_path(task_id: @task.id) do |f| %>
+    <%= f.input :body, label: false, as: :string, placeholder: 'Digite su nota', input_html: {autocomplete: :off} %>
+  <% end %>
+  </div>
+
 <%= link_to 'Edit', edit_task_path(@task) %> |
 <%= link_to 'Back', tasks_path %>
