@@ -20,15 +20,19 @@
   <%= @task.category_id %>
 </p>
 
-  <div class="notes-container">
-  <% @task.notes.each do |note| %>
-    <%= note.body %>
-    <br>
-  <% end %>
-  <%= simple_form_for Note.new, url: task_notes_path(task_id: @task.id) do |f| %>
+<div class="notes-container">
+  <div class="notes">
+    <% @task.notes.each do |note| %>
+    <div  >
+    <%=render 'tasks/notes/note.html.erb', note: note  %>
+    </div>
+    
+    <% end %>
+  </div>
+  <%= simple_form_for Note.new, url: task_notes_path(task_id: @task.id), remote: true do |f| %>
     <%= f.input :body, label: false, as: :string, placeholder: 'Digite su nota', input_html: {autocomplete: :off} %>
   <% end %>
-  </div>
+</div>
 
 <%= link_to 'Edit', edit_task_path(@task) %> |
 <%= link_to 'Back', tasks_path %>
