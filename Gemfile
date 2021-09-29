@@ -28,6 +28,7 @@ gem 'rails-i18n'
 gem 'devise'
 gem 'cocoon'
 gem 'cancancan', '~> 3.3.0'
+gem 'hamlit'
 
 
 # Use Active Storage variant
@@ -41,6 +42,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry', '~> 0.14.1'
   gem 'pry-doc', '~> 1.2.0'
+  
 end
 
 group :development do
@@ -51,6 +53,8 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
   gem 'letter_opener', '~> 1.7.0'
+  gem 'hamlit-rails'
+
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   #gem 'spring'
 end
