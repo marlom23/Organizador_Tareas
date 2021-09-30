@@ -17,7 +17,11 @@ en:
   category:
     category: Category
   common:
+    are_you_sure: Are you sure
     back: Atrás
+    destroy: Destroy
+    edit: Edit
+    show: Show
   description:
     description: Description
   due_date:

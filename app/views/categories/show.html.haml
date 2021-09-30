@@ -1,10 +1,13 @@
-%p#notice= notice
+.category.show-page 
+.card 
+.card-body 
 %p
-  %strong Name:
+  %b Nombre: 
   = @category.name
 %p
-  %strong Description:
+  %b Descripción 
   = @category.description
-= link_to 'Edit', edit_category_path(@category)
-|
-= link_to 'Back', categories_path
+= link_to t('common.edit'), edit_category_path(@category),class:'btn-interaction'\|
+
+=link_to t('common.back'), categories_path,class'btn-interaction'
+

@@ -28,6 +28,7 @@ gem 'rails-i18n'
 gem 'devise'
 gem 'cocoon'
 gem 'cancancan', '~> 3.3.0'
+gem 'font-awesome-sass', '~> 5.15.1'
 gem 'hamlit'
 
 

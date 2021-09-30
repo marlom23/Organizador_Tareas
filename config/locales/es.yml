@@ -17,7 +17,11 @@ es:
   category:
     category: Categoría
   common:
+    are_you_sure: Está seguro?
     back: Atrás
+    destroy: Eliminar
+    edit: Editar
+    show: Mostrar
   description:
     description: Descripción
   due_date:
