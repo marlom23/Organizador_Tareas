@@ -2,11 +2,12 @@
 %html 
   %head 
     %meta{:container => "text/html;charset=UTF-8","http-equiv" => "Content-Type"}/
-    %title %Tasker 
+    %title Tasker 
     =csrf_meta_tags
     =csp_meta_tag 
     =javascript_pack_tag 'application', 'data-turbolinks': 'reload'
-    =stylesheet_link_tag 'application',media:"all", 'data-turbolinks-track': 'reload'
+    =stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    =stylesheet_link_tag 'application', media: "all", 'data-turbolinks-track': 'reload'
 
   %body
     .container 
