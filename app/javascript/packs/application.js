@@ -5,7 +5,7 @@
 
 
 
-import "bootstrap"
+require("bootstrap")
 import "roboto-fontface"
 import "@nathanvda/cocoon"
 import "../src/stylesheets/application"
